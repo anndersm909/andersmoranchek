@@ -1,27 +1,98 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anders Moranchek</title>
+    <style>
+        :root {
+            --green: #238636;
+            --light-green: #eaf6ec;
+            --dark: #17351f;
+        }
 
-<html lang="en"> 
+        * {
+            box-sizing: border-box;
+        }
 
-     <head> 
+        body {
+            margin: 0;
+            color: #222;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
 
-          <meta charset="utf-8"> 
+        header {
+            padding: 2rem 1rem;
+            color: white;
+            text-align: center;
+            background: var(--green);
+        }
 
-          <title>Anders Moranchek</title> 
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
 
-     </head> 
+        nav {
+            background: var(--dark);
+        }
 
-     <body> 
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0.75rem 1rem;
+            list-style: none;
+        }
 
-          <h1 style="color: green;">Anders Moranchek</h1>
+        nav a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
-          <h2>ABOUT ME</h2> 
+        nav a:hover,
+        nav a:focus {
+            color: #b7e4c1;
+            text-decoration: underline;
+        }
 
-               <p>Hello! I am Anders Moranchek, a freshman here at Indiana University. I was born in Naperville, Illinois, right outside of Chicago, and I have lived there my whole life. I am currently majoring in Media, with the hope of going into the broadcasting or sports broadcasting field once I graduate.</p>
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
 
-               <p>Outside of school, I love spending time with my friends and family. My main hobbies are things like the gym, photography, playing video games, and sports like bowling, track and field, and tennis. During high school, I took honors and AP-level English courses, which really sparked my strong interest in writing and journalism. I worked as a sports reporter for our high school newspaper, also doing our school news videos, alongside creating and producing projects. I'm not currently involved in any school organizations, but I plan to join clubs such as the filmmaking club, as well as intramural and club sports.</p>
+        section {
+            scroll-margin-top: 1rem;
+        }
 
-               <p>When it comes to reading and writing, I genuinely enjoy telling stories. Because of my ADHD, reading can sometimes be a bit of a challenge for me, but I have developed some tips and resources over time to keep myself focused. Overall, I am really excited to get to know this class and have a great semester!</p>
+        h2 {
+            color: var(--green);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anders Moranchek</h1>
+    </header>
 
-     </body> 
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About Me</a></li>
+        </ul>
+    </nav>
 
-</html> 
+    <main id="home">
+        <section id="about-me" aria-labelledby="about-heading">
+            <h2 id="about-heading">ABOUT ME</h2>
+            <p>Hello! I am Anders Moranchek, a freshman here at Indiana University. I was born in Naperville, Illinois, right outside of Chicago, and I have lived there my whole life.</p>
+            <p>Outside of school, I love spending time with my friends and family. My main hobbies are things like the gym, photography, playing video games, and sports like bowling, track and field.</p>
+            <p>When it comes to reading and writing, I genuinely enjoy telling stories. Because of my ADHD, reading can sometimes be a bit of a challenge for me, but I have developed some tips and strategies that help me stay focused.</p>
+        </section>
+    </main>
+</body>
+</html>
